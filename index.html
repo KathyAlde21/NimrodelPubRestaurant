@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <title>NIMRODEL Restaurant y Pub</title>
+    <!-- icono web = favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/n.png">
+
+</head>
+<body>
+    <nav>
+        <nav class="navbar navbar-light bg-light">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="assets/img/n.png" alt="" width="500">
+              </a>
+            </div>
+          </nav>
+    </nav>
+    <main>
+        <ul>
+            <li>Nuestros productos</li>
+            <li>Sobre nosotros</li>
+            <!-- links dentro de la página a segmentos especificos -->
+            <li><a href="index.html#comunicar">Comuniquemonos</a></li>
+            <li><a href="index.html#reserva">Reserva</a></li>
+        </ul>
+
+        <h3>Nimrodel Pub Restaurant</h3>
+        <h3>Destacados de la semana</h3>
+
+        <div class="card">
+            <img src="assets/img/bebidas.jpg" class="card-img-top" alt="bebidas" style="width:500px">
+            <div class="card-body">
+                <h5 class="card-title">GASEOSAS</h5>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p> 
+           </div>
+        </div>
+        <div class="card">
+            <img src="assets/img/tablas.jpg" class="card-img-top" alt="tabla" style="width:500px">
+            <div class="card-body">
+                <h5 class="card-title">TABLAS</h5>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p> 
+           </div>
+        </div>
+        <div class="card">
+            <img src="assets/img/shop.jpeg" class="card-img-top" alt="shop" style="width:500px">
+            <div class="card-body">
+                <h5 class="card-title">SHOP CERVEZA</h5>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p> 
+           </div>
+        </div>
+
+    <!-- COMUNIQUEMONOS -->
+        <h3 id="comunicar">Comuniquemonos</h3>
+        <form action="comuniquemonos.html" method="post">
+            <label for="nombre">Nombre </label>
+            <input type="text" name="nombre" id="nombre" placeholder="Maria Vargas">         
+            <br><br>
+            <label for="email">Correo </label>
+            <input type="email" name="correo" pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$" required placeholder="mariavargas@correo.com">
+            <br><br>
+            <label for="telefono">Teléfono </label>
+            <input type="number" name="telefono" id="telefono" placeholder="951236874">
+            <br><br>
+            <label for="nombre">Motivo </label>
+            <input type="text" name="nombre" id="nombre">
+
+            <br><br>
+            <label for="texto" class="form-label"></label>
+            <textarea class="form-label" id="texto"></textarea>
+            <br><br>
+            <input type="submit" value="ENVIAR">
+        </form>
+
+
+    <!-- RESERVA -->
+    <h3 id="reserva" >Reserva</h3>
+    <form action="reserva.html" method="post">
+        <label for="nombre">Nombre </label>
+        <input type="text" name="nombre" id="nombre" placeholder="xxx xxxx">         
+        <br><br>
+        <label for="email">Correo </label>
+        <input type="email" name="correo" pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$" required placeholder="xxx@xxx.xxx">
+        <br><br>
+        <label for="telefono">Teléfono </label>
+        <input type="tel" name="telefono" id="telefono" placeholder="xxxxxxxxx">
+        <br><br>
+        <label for="fecha">Fecha</label>
+        <input type="date" name="fecha" id="fecha">
+        <br><br>
+        <label for="hora">Hora</label>
+        <input type="time" name="hora" id="hora">
+        <br><br>
+        <label for="asistentes">Cantidad de Asistentes</label>
+        <input type="number" name="asistentes" id="asistentes">
+        <br><br>
+        <input type="submit" value="RESERVAR">
+    </form>
+
+    <br><br><br>
+
+    <!-- DERECHOS RESERVADOS -->
+        <footer>
+            <!-- Copyright ©. Alt + 0169
+                Marca registrada ®. Alt + 0174
+                Marca comercial ™. Alt + 0153-->
+            <p>Todos los derechos reservados ®</p>
+        </footer>
+    </main>
+</body>
+</html>
